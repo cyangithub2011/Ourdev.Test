@@ -1,0 +1,119 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #0ff;
+  text-align: center;
+}
+/* Navbar styles */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 15px;
+    background-color: #111;
+    box-shadow: 0 2px 5px #0ff;
+  }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    position: relative;
+  }
+  
+  .nav-links a::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #0ff;
+    width: 0;
+    transition: width 0.3s;
+    margin: 2px auto 0 auto;
+  }
+  
+  .nav-links a:hover::after,
+  .nav-links a.active::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    color: #0ff;
+  }
+
+header {
+  padding: 20px;
+  background-color: #111;
+  box-shadow: 0 2px 5px #0ff;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+/* Developer Section */
+.developers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.developer-card {
+  background-color: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #0ff;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+
+.developer-photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  border: 2px solid #0ff;
+}
+
+.developer-card h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.developer-card p {
+  font-size: 1rem;
+  color: #aaa;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: #777;
+  padding: 20px;
+  margin-top: 30px;
+}
